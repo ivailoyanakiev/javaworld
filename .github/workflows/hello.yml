@@ -17,4 +17,4 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with maven
-      run: javac Hello.java
+      run: mvn -B package --file pom.xml
