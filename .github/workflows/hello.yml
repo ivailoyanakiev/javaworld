@@ -18,3 +18,8 @@ jobs:
         cache: maven
     - name: Build with maven
       run: mvn -B package --file pom.xml
+    - name: upload resulting file
+      uses: actions/upload-artifact@v4
+      with:
+        name: my-artifact
+        path: External-IP-Checker-1.0.2-jar-with-dependencies.jar
