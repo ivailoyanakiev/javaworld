@@ -22,4 +22,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: my-artifact
-        path: External-IP-Checker-1.0.2-jar-with-dependencies.jar
+        path: /home/runner/work/javaworld/javaworld/target/External-IP-Checker-1.0.2-jar-with-dependencies.jar
