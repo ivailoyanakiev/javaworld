@@ -19,8 +19,8 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-    - name: Scan security 
-    - uses: github/codeql-action/init@v3
+    #- name: Scan security 
+    #- uses: github/codeql-action/init@v3
       #with:
       #config-file: ./.github/codeql/codeql-config.yml
       #queries: +security-and-quality,octo-org/python-qlpack/show_ifs.ql@main
