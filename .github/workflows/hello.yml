@@ -7,7 +7,6 @@ on:
 jobs:
   build_test:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v4
     - name: Formating 
@@ -22,10 +21,10 @@ jobs:
         cache: maven
     - name: Scan security 
     - uses: github/codeql-action/init@v3
-      with:
-      config-file: ./.github/codeql/codeql-config.yml
-      queries: +security-and-quality,octo-org/python-qlpack/show_ifs.ql@main
-      packs: +scope/pack1,scope/pack2@1.2.3,scope/pack3@4.5.6:path/to/queries
+      #with:
+      #config-file: ./.github/codeql/codeql-config.yml
+      #queries: +security-and-quality,octo-org/python-qlpack/show_ifs.ql@main
+      #packs: +scope/pack1,scope/pack2@1.2.3,scope/pack3@4.5.6:path/to/queries
     - name: Build with maven
       run: mvn -B package --file pom.xml
     - name: upload resulting file
