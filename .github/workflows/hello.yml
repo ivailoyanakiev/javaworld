@@ -74,4 +74,10 @@ jobs:
       # env:
           # To report GitHub Actions status checks
        # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Scan secturity
+      uses: github/codeql-action/analyze@v1
+      with:
+        languages: java
+        queries: 'security-and-quality'
+        github_token: ${{ secrets.GITHUB_TOKEN }}    
        
