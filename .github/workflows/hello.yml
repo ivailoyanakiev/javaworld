@@ -41,7 +41,7 @@ jobs:
     - name: upload resulting file
       uses: actions/upload-artifact@v4
       with:
-        name: Calc$GITHUB_RUN_NUMBER
+        name: Calc${{ steps.createmilestone.outputs.title }}
         path: /home/runner/work/javaworld/javaworld/target/*
   
  
