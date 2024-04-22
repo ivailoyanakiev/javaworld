@@ -41,7 +41,7 @@ jobs:
     - name: upload resulting file
       uses: actions/upload-artifact@v4
       with:
-        name: Calc
+        name: Calc$GITHUB_RUN_NUMBER
         path: /home/runner/work/javaworld/javaworld/target/*
   
  
