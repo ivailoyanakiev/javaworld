@@ -41,7 +41,7 @@ jobs:
     - name: upload resulting file
       uses: actions/upload-artifact@v4
       with:
-        name: Calc${{ steps.createmilestone.outputs.title }}
+        name: Calc${{ steps.semvers.outputs.patch }}
         path: /home/runner/work/javaworld/javaworld/target/*
   
  
